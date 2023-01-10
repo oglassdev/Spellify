@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Spellify</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://kit.fontawesome.com/0a9d5974f2.js" crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="./style.css"></link>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+    <body>
+        <div class="center-screen">
+            <form id="main-screen" style="display: block;">
+                <h1>Spellify</h1>
+                <input type="text" class="textbox">
+                <br>
+                <br>
+                <button class="button" type="button" id="newWordButton" onclick="newAnimatedTextbox()"><i class="fa-solid fa-plus"></i></button>
+                <button class="button" type="button" id="submitButton" onclick="submitWords()"><i class="fa-solid fa-right-to-bracket"></i></button>
+                <button class="button" type="button" id="clearButton" onclick="clearTextboxes()"><i class="fa-solid fa-trash"></i></button>
+            </form>
+            <form id="spell-screen" style="display: none;">
+                <h1>Spellify</h1>
+                <input type="text" class="spellbox" spellcheck="false">
+                <br>
+                <br>
+                <button class="button" type="button" onclick="backToMain()"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="button" type="button" onclick="checkSpelling()"><i class="fa-solid fa-check"></i></button>
+            </form>
+        </div>
+    </body>
+</html>
